@@ -16,4 +16,5 @@ jobs:
   job_3:
     runs-on: ubuntu-latest
     steps:
+     - run: "echo job ${{github.job }}"
     needs: [job_1,job_2]
