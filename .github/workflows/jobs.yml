@@ -18,3 +18,9 @@ jobs:
     steps:
      - run: "echo job ${{github.job }}"
     needs: [job_1,job_2]
+    
+  job_4:
+    runs-on: ubuntu-latest
+    steps:
+     - run: "echo job ${{github.job }}"
+    needs: [job_2,job_3]
